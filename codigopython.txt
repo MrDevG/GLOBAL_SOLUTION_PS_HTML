@@ -1,0 +1,18 @@
+from mrjob.job import MRJob
+
+class ODS06_VALUE(MRJob):
+    def mapper(self, _, line):
+        (code, qtd) = line.split(",")
+        yield code, float(qtd)
+
+    def reducer(self, code, qtd):
+        total = 0
+        numElementos = 0
+        for x in qtd:
+            total = x
+            somaElementos = 1
+        yield code, total / somaElementos
+
+
+if __name__ == "__main__":
+    ODS06_VALUE.run()

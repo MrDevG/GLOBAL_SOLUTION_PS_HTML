@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html class="noIE" lang="en-US">
+	<head>
+		<title>Global Impact - PS | AEGIS</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:500,300' rel='stylesheet' type='text/css'>
+		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Serif:regular,bold"/>
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/style.css" media="screen"/>
+		<link href="css/slides.min.css?41331" rel="stylesheet" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/slides.min.js?41331" type="text/javascript"></script>
+	</head>
+	<body class="slides chain simplifiedMobile animated">
+		<div id="wrapper">
+			<div id="header" class="content-block">
+				<section class="center">
+					<div class="slogan">
+						GLOBAL IMPACT &amp; AEGIS
+					</div>
+					<div class="secondary-slogan">
+						Project FIAP | PS
+					</div>
+				</section>
+			</div>
+			<div class="content-block" id="portfolio">
+				<div class="container portfolio-sec">
+					<header class="block-heading cleafix">
+						<div class="title-page">
+							<p class="main-header">São Paulo </p>
+					    </div>
+					</header>
+					<section class="block-body">
+						<div class="row">
+							<div class="col-sm-4">
+								<a href="./assets/pages/alto_tiete.html" class="recent-work" style="background-image:url(assets/images/tiete.jpg)">
+									<span class="btn btn-o-white">Alto do Tietê</span>
+								</a>
+							</div>
+							<div class="col-sm-4">
+								<a href="./assets/pages/cantareira.html" class="recent-work" style="background-image:url(assets/images/cantareira.jpg)">
+									<span class="btn btn-o-white">Cantareira</span>
+								</a>
+							</div>
+							<div class="col-sm-4">
+								<a href="./assets/pages/guarapiranga.html" class="recent-work" style="background-image:url(assets/images/guarapiranga.jpg)">
+									<span class="btn btn-o-white">Guarapiranga</span>
+								</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<a href="./assets/pages/marsilac.html" class="recent-work" style="background-image:url(assets/images/marsilac.jpg)">
+									<span class="btn btn-o-white">Marsilac</span>
+								</a>
+							</div>
+							<div class="col-sm-4">
+								<a href="./assets/pages/oriental.html" class="recent-work" style="background-image:url(assets/images/oriental.jpg)">
+									<span class="btn btn-o-white">Oriental</span>
+								</a>
+							</div>
+							<div class="col-sm-4">
+								<a href="./assets/pages/rio_claro.html" class="recent-work" style="background-image:url(assets/images/rio-claro-sp.jpg)">
+									<span class="btn btn-o-white">Rio Claro</span>
+								</a>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+			<div class="content-block footer-bottom" id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-6">&copy; Copyright 2021</div>
+						<div class="col-xs-6 text-right">Theme by <a href="./assets/pages/group_data.html" target="_blink">Aegis</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="assets/js/jquery-2.1.3.min.js"></script>
+		<script src="assets/js/bootstrap.js"></script>
+		<script src="assets/js/jquery.actual.min.js"></script>
+		<script src="assets/js/jquery.scrollTo.min.js"></script>
+		<script src="assets/js/contact.js"></script>
+		<script src="assets/js/script.js"></script>
+		<script src="assets/js/smoothscroll.js"></script>
+		<script type="text/javascript">
+		jQuery(document).ready(function($){
+
+		  	$(window).scroll(function() {
+		  		
+		  		console.log("asdf");
+
+				if ($(window).scrollTop() > 100 ){
+		    
+		 		$('.top-header').addClass('shows');
+		    
+		  		} else {
+		    
+		   	 	$('.top-header').removeClass('shows');
+		    
+		 		};   	
+			});
+
+		  });
+		jQuery('.scroll').on('click', function(e){		
+				e.preventDefault()
+		  jQuery('html, body').animate({
+		      scrollTop : jQuery(this.hash).offset().top
+		    }, 1500);
+		});
+		</script>
+	</body>
+</html>
